@@ -1,0 +1,67 @@
+/* Signup specific styles */
+.form-input.error {
+  border-color: #ff4757;
+  box-shadow: 0 0 0 3px rgba(255, 71, 87, 0.1);
+}
+
+.error-message {
+  color: #ff4757;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  display: block;
+  font-weight: 500;
+}
+
+/* Animation for form appearance */
+.form-card {
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Focus states for better UX */
+.form-input:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+}
+
+/* Loading state for button */
+.form-button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* Hover effects for better interactivity */
+.form-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* Password strength indicator (optional enhancement) */
+.password-strength {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.password-strength.weak {
+  color: #ff4757;
+}
+
+.password-strength.medium {
+  color: #ffa502;
+}
+
+.password-strength.strong {
+  color: #2ed573;
+}
